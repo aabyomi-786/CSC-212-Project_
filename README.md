@@ -1,7 +1,12 @@
 Sorting Algorithms Project Report
+--------
 URI CSC 212 Summer 2023 
+-----------
 
-Description- The project for CSC 212 class is to implement the different Sorting algorithms learned during the summer period. 
+
+Project Description
+-----------
+The project for CSC 212 class is to implement the different Sorting algorithms learned during the summer period. 
 
 Afolabi
 --------
