@@ -14,10 +14,15 @@ Afolabi
 7/8  Group meeting: Discussion work processes
 
 7/10 Check up on team members
+
 7/15  Project report build-up, individual works
+
 7/17 Group meeting: Check in on team members, individual work
+
 7/19 Group meeting: code discussions and project slides/report configurations.
+
 7/23 Group meeting: Finalizing project works and uploads
+
 7/24 Project completion, finalizing and submission.
 
 Alex
