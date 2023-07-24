@@ -4,60 +4,77 @@
 #include <fstream>
 #include <sstream>
 
-int partition(std::vector<int>& numArray, int low, int high) {
-    int pivot = numArray[high];
-    int i = low - 1;
-    for (int j = low; j < high; j++) {
-        if (numArray[j] <= pivot) {
-            i++;
-            std::swap(numArray[i], numArray[j]);
+// Function to partition the array into two parts based on the pivot
+int partition(std::vector<int>& numArray, int low, int high){
+    // Last element and current index variables
+    int pivot = numArray[high], currentIndex = low - 1;
+    // Loop through the array and check ff the current element is less than or equal to the pivot
+    for(int j = low; j < high; j++){
+        if(numArray[j] <= pivot){
+            // Swap the elements at currentIndex and j if true
+            currentIndex++;
+            std::swap(numArray[currentIndex], numArray[j]);
         }
     }
-    std::swap(numArray[i + 1], numArray[high]);
-    return i + 1;
+    // Swap the pivot (last element) to its correct position
+    std::swap(numArray[currentIndex + 1], numArray[high]);
+    // Return the index of the pivot's final position
+    return currentIndex + 1;
 }
 
-void quickSort(std::vector<int>& numArray, int low, int high) {
-    if (low < high) {
-        int pi = partition(numArray, low, high);
-        quickSort(numArray, low, pi - 1);
-        quickSort(numArray, pi + 1, high);
+// Function to perform Quick Sort on the array recursively
+void quickSort(std::vector<int>& numArray, int low, int high){
+    if(low < high){
+        // Partition the array into two sub-arrays and get the pivot's index
+        int partitionIndex = partition(numArray, low, high);
+        // Recursively perform Quick Sort on the left and right sub-arrays respectively
+        quickSort(numArray, low, partitionIndex - 1);
+        quickSort(numArray, partitionIndex + 1, high);
     }
 }
 
 int main(){
     int choice;
-    std::cout << "Please input 0 for file name or 1 for testing numbers through your IDE" << std::endl;
+    std::cout << "Please input 0 for file name or 1 for testing numbers through your IDE: ";
     std::cin >> choice;
     std::vector<int> numArray;
+    // Input from file
     if(choice == 0){
-        std::string filename, line;
+        std::string filename;
         std::cout << "Input file name: ";
         std::cin >> filename;
         std::fstream file(filename);
         int temp;
         if(file.is_open()){
+            // Store each number from the file in the vector
             while(file >> temp){
                 numArray.push_back(temp);
             }
         }else{
             std::cout << "Unable to open file";
         }
+        file.close();
+        // Call quick sort with vector data and the starting and ending indexes
         quickSort(numArray, 0, numArray.size() - 1);
-    }else if(choice == 1){
+    }else if(choice == 1){ // Manual Input
         int size, newNum;
         std::cout << "How many numbers will you test? ";
         std::cin >> size;
         std::cout << "Enter Numbers: " << std::endl;
+        // Store each input number into the vector
         for(int i = 0; i < size; i++){
             std::cin >> newNum;
             numArray.push_back(newNum);
         }
+        // Sort the array using Quick Sort algorithm
         quickSort(numArray, 0, numArray.size() - 1);
     }else{
+        // Invalid Input error
         std::cout << "ERROR invalid input exiting program";
         return 1;
     }
+
+    // Print the sorted array
     for(int i = 0; i < numArray.size(); i++){
         std::cout << numArray[i] << ' ';
     }
