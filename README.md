@@ -55,15 +55,25 @@ Alex
 
 Justin
 ------
-6/29
-7/2
-7/7
-7/8
-7/10
-7/15
-7/17
-7/19
-7/23
+6/29 ~ Group Meeting ~ Dividing roles and work between group members, created framework for the report
+
+7/2 ~ Group Meeting ~ Topic research
+
+7/7 ~ Group Meeting ~ Individual group members specific work processing, what is needed from each member
+
+7/8 ~ Group Meeting ~ Quick meeting on anything that can be improved/refined in our work processes
+
+7/10 ~ Cross check in on group members work/helping with each others issues
+
+7/15 ~ Group Meeting ~ Check in on individual work and collaborating on the report
+
+7/17 ~ Group Meeting ~ Quick check in on individual work
+
+7/19 ~ Group Meeting ~ Code explanations, finalizing work, making sure code and explanations are clear and concise
+
+7/23 ~ Group Meeting ~ Finising touches and last minute additions. Preping for presentation
+
+7/24 ~ Project is finalized and submitted
 
 Kenny
 ------
