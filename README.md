@@ -6,9 +6,13 @@ Description- The project for CSC 212 class is to implement the different Sorting
 Afolabi
 --------
 6/29 Group Meeting: Discussed each team member's role, project report doc build.
+
 7/2  Group Meeting: Topic Research 
+
 7/7  Group meeting: Individual work processing
+
 7/8  Group meeting: Discussion work processes
+
 7/10 Check up on team members
 7/15  Project report build-up, individual works
 7/17 Group meeting: Check in on team members, individual work
