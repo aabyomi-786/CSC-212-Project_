@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-
+//Using command line g++ insertion_sort.cpp -o insertion_sort followed by ./insertion_sort
 //Function to perfom Insertion Sort
-void insertionSort(int arr[], int size){
+void insertionSort(int arr[], int size, int&counter){
     for (int i = 1; i < size; i++){
         int key = arr[i]; //current element to be inserted at its correct position
         int j = i - 1;
@@ -12,6 +12,7 @@ void insertionSort(int arr[], int size){
         while(j >= 0 and arr[j] > key){
             arr[j + 1] = arr[j]; //Move the element one position to the right
             j--;
+            counter++;
 
         }
 
@@ -37,8 +38,10 @@ int main(){
         cout << arr[i] << " "; //Print each element of the array
     }
     cout << endl;
+    
+    int counter = 0; //Counter to keep track of the number of iterations
+    insertionSort(arr, size, counter); //Call the Insertion Sort function
 
-    insertionSort(arr, size); //Call the Insertion Sort function
 
     cout << "Sorted Array: ";
     for (int i = 0; i < size; i++){
@@ -46,6 +49,7 @@ int main(){
 
     }
     cout<< endl;
+    cout << "number of iterations: " << counter << endl;
 
 
     return 0;
