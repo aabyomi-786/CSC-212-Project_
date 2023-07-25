@@ -12,7 +12,7 @@ void insertionSort(int arr[], int size, int&counter){
         while(j >= 0 and arr[j] > key){
             arr[j + 1] = arr[j]; //Move the element one position to the right
             j--;
-            counter++;
+            counter++; //counter that increments everytime we loop while sorting
 
         }
 
