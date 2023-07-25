@@ -83,15 +83,23 @@ Justin
 
 Kenny
 ------
-6/29
-7/2
-7/7
-7/8
-7/10
-7/15
-7/17
-7/19
-7/23
+6/29 Group Meeting: We divided the roles up between each group member and discussed our project report
+
+7/2  Group Meeting: Topic Research 
+
+7/7  Group Meeting: Working individually/discussion about what each member needs to complete
+
+7/8  Group Meeting: Meeting to check up and see if any improvements could be made
+
+7/10 Group Check in: Updating our projects and seeing where we could improve
+
+7/15 Group Meeting: Quick check in on projects/work on project report
+
+7/17 Group Meeting: Meeting and updating each other about our projects
+
+7/19 Group Meeting: Finalizing our codes, project report, project presentation
+
+7/23: Project submission
 
 
 --------------------------------------------------------------------------
