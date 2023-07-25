@@ -8,6 +8,12 @@ Project Description
 -----------
 The project for CSC 212 class is to implement the different Sorting algorithms learned during the summer period. 
 
+Compilation Instructions
+-----------
+merge_sort.cpp - Type "g++ merge_sort.cpp -o prog ; ./prog" into your terminal. This program has the option to take in data from a file, or read directly from the user via std cin. The user will be prompted if they would like to enter a filename or enter numbers through the terminal. If the user enters zero, they will be asked for a filename input. If the user enters one, they will be asked how many numbers they would like to enter. Input the amount of numbers you would like to test, then press enter. You will then be asked to enter your numbers. WARNING: Entering more numbers than the amount of the size you entered will result with the remaining numbers being absent from the algorithm. 
+
+quick_sort.cpp - Type "g++ quick_sort.cpp -o prog ; ./prog" into your terminal. This program has the option to take in data from a file, or read directly from the user via std cin. The user will be prompted if they would like to enter a filename or enter numbers through the terminal. If the user enters zero, they will be asked for a filename input. If the user enters one, they will be asked how many numbers they would like to enter. Input the amount of numbers you would like to test, then press enter. You will then be asked to enter your numbers. WARNING: Entering more numbers than the amount of the size you entered will result with the remaining numbers being absent from the algorithm. 
+
 Afolabi
 --------
 6/29 Group Meeting: Discussed each team member's role, project report doc build.
